@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project>
+  <PropertyGroup>
+    <BuildDependsOn>$(BuildDependsOn);LibJpegTurboTeklaRedist</BuildDependsOn>
+  </PropertyGroup>
+  <Target Name="LibJpegTurboTeklaRedist">
+    <ItemGroup Condition="'$(Platform)'=='x64'">
+      <LibJpegTurboTeklaRedistFiles Include="$(MSBuildThisFileDirectory)..\native\bin\x64\v142\*" />
+    </ItemGroup>
+    <Message Text="Platform=$(Platform)" />
+    <Copy SourceFiles="@(LibJpegTurboTeklaRedistFiles)" DestinationFolder="$(OutDir)" />
+  </Target>
+</Project>

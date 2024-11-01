@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package>
+  <metadata>
+    <id>LibJpeg-Turbo-Tekla</id>
+    <version>2.1.4.1</version>
+    <authors>libjpeg-turbo project</authors>
+    <license type="file">LICENSE.md</license>
+    <projectUrl>https://libjpeg-turbo.org/Main/HomePage</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>The native libjpeg-turbo library, Tekla build (x64, v140/v141/v142/v143->v142, Release/DebugCRT).</description>
+    <title>LibJpeg-Turbo (Tekla build)</title>
+    <tags>LibJpeg-Turbo native</tags>
+  </metadata>
+  <files>
+    <file src="LibJpeg-Turbo-Tekla.targets" target="\build\native\" />
+    
+    <file src="..\include\**\*" exclude="..\include\turbojpeg.h" target="\build\native\include\" />
+	
+    <file src="..\vs2015-x64\jpeg.lib" target="\build\native\lib\x64\v140\" />
+    <file src="..\vs2017-x64\jpeg.lib" target="\build\native\lib\x64\v141\" />
+    <file src="..\vs2019-x64\jpeg.lib" target="\build\native\lib\x64\v142\" />
+
+    <file src="..\vs2015-x64\Debug\jpeg.lib" target="\build\native\lib\x64\v140\DebugCRT\" />
+    <file src="..\vs2017-x64\Debug\jpeg.lib" target="\build\native\lib\x64\v141\DebugCRT\" />
+    <file src="..\vs2019-x64\Debug\jpeg.lib" target="\build\native\lib\x64\v142\DebugCRT\" />
+
+    <file src="..\LICENSE.md" target="" />
+  </files>
+</package>

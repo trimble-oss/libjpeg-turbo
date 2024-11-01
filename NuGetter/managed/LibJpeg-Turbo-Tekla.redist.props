@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project>
+  <PropertyGroup>
+    <LibJpegTurboTeklaRedist_NugetInstallDirectory>$(MSBuildThisFileDirectory)</LibJpegTurboTeklaRedist_NugetInstallDirectory>
+  </PropertyGroup>
+</Project>

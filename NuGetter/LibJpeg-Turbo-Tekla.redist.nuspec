@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package>
+  <metadata>
+    <id>LibJpeg-Turbo-Tekla.redist</id>
+    <version>2.1.4.1</version>
+    <authors>libjpeg-turbo project</authors>
+    <license type="file">LICENSE.md</license>
+    <projectUrl>https://libjpeg-turbo.org/Main/HomePage</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Redistributable components for package 'LibJpeg-Turbo-Tekla'.</description>
+    <title>LibJpeg-Turbo (Tekla build) Redist</title>
+    <tags>LibJpeg-Turbo  native  nativepackage</tags>
+  </metadata>
+  <files>
+    <file src="LibJpeg-Turbo-Tekla.redist.targets" target="\build\native\" />
+    
+    <file src="..\vs2015-x64\jpeg62.dll" target="\build\native\bin\x64\v140\" />
+    <file src="..\vs2017-x64\jpeg62.dll" target="\build\native\bin\x64\v141\" />
+    <file src="..\vs2019-x64\jpeg62.dll" target="\build\native\bin\x64\v142\" />
+
+    <file src="..\vs2015-x64\Debug\jpeg62.dll" target="\build\native\bin\x64\v140\DebugCRT\" />
+    <file src="..\vs2015-x64\Debug\jpeg62.pdb" target="\build\native\bin\x64\v140\DebugCRT\" />
+    <file src="..\vs2017-x64\Debug\jpeg62.dll" target="\build\native\bin\x64\v141\DebugCRT\" />
+    <file src="..\vs2017-x64\Debug\jpeg62.pdb" target="\build\native\bin\x64\v141\DebugCRT\" />
+    <file src="..\vs2019-x64\Debug\jpeg62.dll" target="\build\native\bin\x64\v142\DebugCRT\" />
+    <file src="..\vs2019-x64\Debug\jpeg62.pdb" target="\build\native\bin\x64\v142\DebugCRT\" />
+
+    <file src="managed\LibJpeg-Turbo-Tekla.redist.props" target="\build\net\" />
+    <file src="managed\LibJpeg-Turbo-Tekla.redist.targets" target="\build\net\" />
+
+    <file src="..\LICENSE.md" target="" />
+  </files>
+</package>
